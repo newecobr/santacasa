@@ -1,0 +1,84 @@
+Doenca,Capitulo
+Algumas,Algumas doenças infecciosas e parasitárias (A00-B99)
+Neoplasias,Neoplasias [tumores] (C00-D48)
+Doenças,Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários (D50-D89)
+Doenças,"Doenças endócrinas, nutricionais e metabólicas (E00-E90)"
+Transtornos,Transtornos mentais e comportamentais (F00-F99)
+Doenças,Doenças do sistema nervoso (G00-G99)
+Doenças,Doenças do olho e anexos (H00-H59)
+Doenças,Doenças do ouvido e da apófise mastóide (H60-H95)
+Doenças,Doenças do aparelho circulatório (I00-I99)
+Doenças,Doenças do aparelho respiratório (J00-J99)
+Doenças,Doenças do aparelho digestivo (K00-K93)
+Doenças,Doenças da pele e do tecido subcutâneo (L00-L99)
+Doenças,Doenças do sistema osteomuscular e do tecido conjuntivo (M00-M99)
+Doenças,Doenças do aparelho geniturinário (N00-N99)
+Gravidez,"Gravidez, parto e puerpério (O00-O99)"
+Algumas,Algumas afecções originadas no período perinatal (P00-P96)
+Malformações,"Malformações congênitas, deformidades e anomalias cromossômicas (Q00-Q99)"
+Sintomas,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+Lesões,"Lesões, envenenamento e algumas outras conseqüências de causas externas (S00-T98)"
+Causas,Causas externas de morbidade e de mortalidade (V01-Y98)
+Fatores,Fatores que influenciam o estado de saúde e o contato com os serviços de saúde (Z00-Z99)
+Códigos,Códigos para propósitos especiais (U04-U99)
+doenças,Algumas doenças infecciosas e parasitárias (A00-B99)
+tumores,Neoplasias [tumores] (C00-D48)
+sangue,Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários (D50-D89)
+endócrinas,"Doenças endócrinas, nutricionais e metabólicas (E00-E90)"
+mentais,Transtornos mentais e comportamentais (F00-F99)
+sistema nervoso,Doenças do sistema nervoso (G00-G99)
+olho e anexos,Doenças do olho e anexos (H00-H59)
+ouvido,Doenças do ouvido e da apófise mastóide (H60-H95)
+aparelho,Doenças do aparelho circulatório (I00-I99)
+aparelho,Doenças do aparelho respiratório (J00-J99)
+aparelho,Doenças do aparelho digestivo (K00-K93)
+pele,Doenças da pele e do tecido subcutâneo (L00-L99)
+sistema osteomuscular,Doenças do sistema osteomuscular e do tecido conjuntivo (M00-M99)
+aparelho,Doenças do aparelho geniturinário (N00-N99)
+parto,"Gravidez, parto e puerpério (O00-O99)"
+afecções,Algumas afecções originadas no período perinatal (P00-P96)
+congênitas,"Malformações congênitas, deformidades e anomalias cromossômicas (Q00-Q99)"
+sinais,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+envenenamento,"Lesões, envenenamento e algumas outras conseqüências de causas externas (S00-T98)"
+externas,Causas externas de morbidade e de mortalidade (V01-Y98)
+influenciam,Fatores que influenciam o estado de saúde e o contato com os serviços de saúde (Z00-Z99)
+propósitos,Códigos para propósitos especiais (U04-U99)
+infecciosas,Algumas doenças infecciosas e parasitárias (A00-B99)
+órgãos hematopoéticos,Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários (D50-D89)
+nutricionais,"Doenças endócrinas, nutricionais e metabólicas (E00-E90)"
+comportamentais,Transtornos mentais e comportamentais (F00-F99)
+apófise,Doenças do ouvido e da apófise mastóide (H60-H95)
+circulatório,Doenças do aparelho circulatório (I00-I99)
+respiratório,Doenças do aparelho respiratório (J00-J99)
+digestivo,Doenças do aparelho digestivo (K00-K93)
+tecido subcutâneo,Doenças da pele e do tecido subcutâneo (L00-L99)
+tecido conjuntivo,Doenças do sistema osteomuscular e do tecido conjuntivo (M00-M99)
+geniturinário,Doenças do aparelho geniturinário (N00-N99)
+puerpério,"Gravidez, parto e puerpério (O00-O99)"
+originadas,Algumas afecções originadas no período perinatal (P00-P96)
+deformidades,"Malformações congênitas, deformidades e anomalias cromossômicas (Q00-Q99)"
+achados anormais,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+algumas outras,"Lesões, envenenamento e algumas outras conseqüências de causas externas (S00-T98)"
+morbidade,Causas externas de morbidade e de mortalidade (V01-Y98)
+estado de saúde,Fatores que influenciam o estado de saúde e o contato com os serviços de saúde (Z00-Z99)
+especiais,Códigos para propósitos especiais (U04-U99)
+parasitárias,Algumas doenças infecciosas e parasitárias (A00-B99)
+alguns transtornos,Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários (D50-D89)
+metabólicas,"Doenças endócrinas, nutricionais e metabólicas (E00-E90)"
+mastóide,Doenças do ouvido e da apófise mastóide (H60-H95)
+período,Algumas afecções originadas no período perinatal (P00-P96)
+anomalias,"Malformações congênitas, deformidades e anomalias cromossômicas (Q00-Q99)"
+exames,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+conseqüências,"Lesões, envenenamento e algumas outras conseqüências de causas externas (S00-T98)"
+mortalidade,Causas externas de morbidade e de mortalidade (V01-Y98)
+contato,Fatores que influenciam o estado de saúde e o contato com os serviços de saúde (Z00-Z99)
+imunitários,Doenças do sangue e dos órgãos hematopoéticos e alguns transtornos imunitários (D50-D89)
+perinatal,Algumas afecções originadas no período perinatal (P00-P96)
+cromossômicas,"Malformações congênitas, deformidades e anomalias cromossômicas (Q00-Q99)"
+clínicos,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+causas externas,"Lesões, envenenamento e algumas outras conseqüências de causas externas (S00-T98)"
+serviços de saúde,Fatores que influenciam o estado de saúde e o contato com os serviços de saúde (Z00-Z99)
+Sintomas,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+laboratório,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+não classificados,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"
+outra parte,"Sintomas, sinais e achados anormais de exames clínicos e de laboratório, não classificados em outra parte (R00-R99)"

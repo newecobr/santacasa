@@ -1,0 +1,2899 @@
+{
+  "version": "0.12.0",
+  "graph": {
+    "nodes": [
+      {
+        "id": "n0",
+        "position": {
+          "x": -490.3142002442087,
+          "y": -460.1257480684383
+        },
+        "caption": "Sintomas"
+      },
+      {
+        "id": "n1",
+        "position": {
+          "x": -679.6687414272926,
+          "y": -66
+        },
+        "caption": "Grupos Sintomas"
+      },
+      {
+        "id": "n2",
+        "position": {
+          "x": -69.17960651590852,
+          "y": 187.60646129239998
+        },
+        "caption": "Doencas"
+      },
+      {
+        "id": "n3",
+        "position": {
+          "x": 268.54961068448506,
+          "y": 108.15744204796067
+        },
+        "caption": "Grupos Doencas"
+      },
+      {
+        "id": "n4",
+        "position": {
+          "x": -69.17960651590852,
+          "y": -66
+        },
+        "caption": "SubGrupos Doencas"
+      },
+      {
+        "id": "n5",
+        "position": {
+          "x": -679.6687414272926,
+          "y": 763.9816264964784
+        },
+        "caption": "Pacientes"
+      },
+      {
+        "id": "n7",
+        "position": {
+          "x": -463.70798638928227,
+          "y": 369.3456941328563
+        },
+        "caption": "Sintomas Agrupados"
+      },
+      {
+        "id": "n8",
+        "position": {
+          "x": -345.8755228811932,
+          "y": 73.69360275398583
+        },
+        "caption": "Doencas Agrupadas"
+      },
+      {
+        "id": "n9",
+        "position": {
+          "x": -1280.7061977953956,
+          "y": 539.6453472165487
+        },
+        "caption": "Terapias"
+      },
+      {
+        "id": "n10",
+        "position": {
+          "x": -679.6687414272926,
+          "y": 979.1396925228992
+        },
+        "caption": "Suplementos"
+      },
+      {
+        "id": "n11",
+        "position": {
+          "x": -679.6687414272926,
+          "y": 1279.1396925228992
+        },
+        "caption": "Grupos Suplementos"
+      },
+      {
+        "id": "n12",
+        "position": {
+          "x": -961.8810951444195,
+          "y": 1139.30258568582
+        },
+        "caption": "Partes do Corpo"
+      },
+      {
+        "id": "n13",
+        "position": {
+          "x": -961.8810951444195,
+          "y": 162.7983130323346
+        },
+        "caption": "Habitos"
+      },
+      {
+        "id": "n14",
+        "position": {
+          "x": -1257.084561927368,
+          "y": 741.668846852572
+        },
+        "caption": "Situacoes"
+      },
+      {
+        "id": "n15",
+        "position": {
+          "x": -1257.084561927368,
+          "y": 1027.727137780949
+        },
+        "caption": "Beneficios"
+      },
+      {
+        "id": "n16",
+        "position": {
+          "x": -961.8810951444195,
+          "y": 916.8308144424456
+        },
+        "caption": "Beneficios Concatenados"
+      },
+      {
+        "id": "n18",
+        "position": {
+          "x": -350.1388223803124,
+          "y": 811.9311164950758
+        },
+        "caption": "Alimentos"
+      },
+      {
+        "id": "n19",
+        "position": {
+          "x": -405.5688547142036,
+          "y": 979.1396925228992
+        },
+        "caption": "Exames"
+      },
+      {
+        "id": "n20",
+        "position": {
+          "x": -282.115005848403,
+          "y": 1258.3814773739132
+        },
+        "caption": "Areas"
+      },
+      {
+        "id": "n21",
+        "position": {
+          "x": -69.17960651590852,
+          "y": 916.8308144424456
+        },
+        "caption": "Grupos Alimentos"
+      },
+      {
+        "id": "n22",
+        "position": {
+          "x": 727.6526779055336,
+          "y": 187.60646129239998
+        },
+        "caption": "Eventos"
+      },
+      {
+        "id": "n23",
+        "position": {
+          "x": 268.54961068448506,
+          "y": 635.7104267142955
+        },
+        "caption": "Grupos Eventos"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "n0",
+        "type": "TEM",
+        "fromId": "n1",
+        "toId": "n0"
+      },
+      {
+        "id": "n1",
+        "type": "CONTEM",
+        "fromId": "n3",
+        "toId": "n4"
+      },
+      {
+        "id": "n2",
+        "type": "TEM",
+        "fromId": "n4",
+        "toId": "n2"
+      },
+      {
+        "id": "n3",
+        "type": "CONTEM",
+        "fromId": "n3",
+        "toId": "n2"
+      },
+      {
+        "id": "n5",
+        "type": "DOENCA_CLASSE",
+        "fromId": "n2",
+        "toId": "n2"
+      },
+      {
+        "id": "n8",
+        "type": "DIAGNOSTICO",
+        "fromId": "n5",
+        "toId": "n2"
+      },
+      {
+        "id": "n9",
+        "type": "TEM",
+        "fromId": "n5",
+        "toId": "n0"
+      },
+      {
+        "id": "n14",
+        "type": "RELACAO SINTOMAS PARA RELACAO DOENCAS",
+        "fromId": "n0",
+        "toId": "n2"
+      },
+      {
+        "id": "n16",
+        "type": "SINTOMAS ORIGEM PARA RELACAO SINTOMAS AGRUPADOS DESTINO",
+        "fromId": "n0",
+        "toId": "n7"
+      },
+      {
+        "id": "n17",
+        "type": "RELACAO DOENCAS AGRUPADAS RELACAO DOENCAS",
+        "fromId": "n8",
+        "toId": "n2"
+      },
+      {
+        "id": "n18",
+        "type": "DOENCAS QUE COMPOEM A RELACAO",
+        "fromId": "n2",
+        "toId": "n8"
+      },
+      {
+        "id": "n19",
+        "type": "RELACAO DOENCAS AGRUPADAS PARA DOENCAS AGRUPADAS",
+        "fromId": "n8",
+        "toId": "n8"
+      },
+      {
+        "id": "n20",
+        "type": "RELACAO DOENCAS PARA DOENCAS AGRUPADAS",
+        "fromId": "n2",
+        "toId": "n8"
+      },
+      {
+        "id": "n21",
+        "type": "RELACAO DOENCAS PARA RELACAO DOENCA",
+        "fromId": "n2",
+        "toId": "n2"
+      },
+      {
+        "id": "n22",
+        "type": "RELACAO SINTOMAS PARA RELACAO DOENCAS AGRUPADAS",
+        "fromId": "n0",
+        "toId": "n8"
+      },
+      {
+        "id": "n23",
+        "type": "RELACAO SINTOMAS AGRUPADOS PARA RELACAO DOENCA",
+        "fromId": "n7",
+        "toId": "n2"
+      },
+      {
+        "id": "n24",
+        "type": "RELACAO SINTOMAS AGRUPADOS PARA RELACAO DOENCAS AGRUPADAS",
+        "fromId": "n7",
+        "toId": "n8"
+      },
+      {
+        "id": "n25",
+        "type": "TEM",
+        "fromId": "n11",
+        "toId": "n10"
+      },
+      {
+        "id": "n26",
+        "type": "FAZ",
+        "fromId": "n5",
+        "toId": "n9"
+      },
+      {
+        "id": "n27",
+        "type": "INGERE",
+        "fromId": "n5",
+        "toId": "n10"
+      },
+      {
+        "id": "n28",
+        "type": "TEM",
+        "fromId": "n5",
+        "toId": "n13"
+      },
+      {
+        "id": "n29",
+        "type": "FAZ_PARTE",
+        "fromId": "n15",
+        "toId": "n16"
+      },
+      {
+        "id": "n30",
+        "type": "TEM",
+        "fromId": "n10",
+        "toId": "n16"
+      },
+      {
+        "id": "n31",
+        "type": "INGERE",
+        "fromId": "n5",
+        "toId": "n18"
+      },
+      {
+        "id": "n32",
+        "type": "TEM",
+        "fromId": "n5",
+        "toId": "n16"
+      },
+      {
+        "id": "n33",
+        "type": "FAZ",
+        "fromId": "n5",
+        "toId": "n19"
+      },
+      {
+        "id": "n34",
+        "type": "CONTEM",
+        "fromId": "n21",
+        "toId": "n18"
+      },
+      {
+        "id": "n35",
+        "type": "TEM",
+        "fromId": "n23",
+        "toId": "n22"
+      },
+      {
+        "id": "n36",
+        "type": "ESTA_RELACIONADO",
+        "fromId": "n23",
+        "toId": "n23"
+      },
+      {
+        "id": "n37",
+        "type": "ESTA_RELACIONADO",
+        "fromId": "n22",
+        "toId": "n22"
+      },
+      {
+        "id": "n38",
+        "type": "TEM",
+        "fromId": "n22",
+        "toId": "n0"
+      },
+      {
+        "id": "n39",
+        "type": "TEM",
+        "fromId": "n22",
+        "toId": "n2"
+      },
+      {
+        "id": "n40",
+        "type": "GERA",
+        "fromId": "n5",
+        "toId": "n22"
+      },
+      {
+        "id": "n41",
+        "type": "TEM",
+        "fromId": "n5",
+        "toId": "n23"
+      },
+      {
+        "id": "n42",
+        "type": "TERMOS DOENCAS SUBGRUPOS CID",
+        "fromId": "n2",
+        "toId": "n4"
+      },
+      {
+        "id": "n43",
+        "type": "TERMOS DOENCA NO CAPITULO",
+        "fromId": "n2",
+        "toId": "n3"
+      }
+    ]
+  },
+  "dataModel": {
+    "configurations": {
+      "idsToIgnore": []
+    },
+    "fileModel": {
+      "fileSchemas": {
+        "_okRelacionamentoPacientesSintomas - Relacionamento Pacientes grupos de sintomas.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente 10 N. E.",
+              "include": true
+            },
+            {
+              "name": "Grupo Sintomas",
+              "type": "string",
+              "sample": "GRUPO Q",
+              "include": true
+            }
+          ]
+        },
+        "Doencas Agrupadas - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "sample": "46; XX Distúrbios do Desenvolvimento Sexual",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Eventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Eventos",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Grupo Evento relacionado a Evento.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupo Evento",
+              "type": "string",
+              "sample": "1923a",
+              "include": true
+            },
+            {
+              "name": "Evento",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Grupos de Eventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Ano",
+              "type": "integer",
+              "sample": "1923",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Paciente relacionado aos Grupos de Eventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente X",
+              "include": true
+            },
+            {
+              "name": "Ano",
+              "type": "integer",
+              "sample": "1923",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Paciente X Relacionado aos Eventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente X",
+              "include": true
+            },
+            {
+              "name": "Eventos",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            }
+          ]
+        },
+        "Eventos - Relacionamento Grupo Eventos com Grupo Eventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Ano",
+              "type": "integer",
+              "sample": "1923",
+              "include": true
+            },
+            {
+              "name": "Ano Semestre",
+              "type": "string",
+              "sample": "1923a",
+              "include": true
+            }
+          ]
+        },
+        "EventosDoencas - Página2.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Macro Evento",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            },
+            {
+              "name": "Doenca",
+              "type": "string",
+              "sample": "Síndrome da Imune Deficiência Adquirida (AIDS) (Transtorno)",
+              "include": true
+            }
+          ]
+        },
+        "EventosMacroRelacionamentoMicroEventosSintomas - MacroEventosRelacionamentoMicroEventos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Macro evento",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            },
+            {
+              "name": "Micro Evento",
+              "type": "string",
+              "sample": "09/06/1923",
+              "include": true
+            }
+          ]
+        },
+        "EventosMacroRelacionamentoMicroEventosSintomas - RelacionamentoEventosSintomas.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Micro Evento",
+              "type": "string",
+              "sample": "06/06/1923",
+              "include": true
+            },
+            {
+              "name": "Sintoma",
+              "type": "string",
+              "sample": "Fadiga associada à AIDS",
+              "include": true
+            }
+          ]
+        },
+        "okCID - Capítulos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Descricao Capitulo",
+              "type": "string",
+              "sample": "Algumas doenças infecciosas e parasitárias (A00-B99)",
+              "include": true
+            }
+          ]
+        },
+        "okCID - PubMed e MeSH.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupos Doencas",
+              "type": "string",
+              "sample": "PubMed",
+              "include": true
+            },
+            {
+              "name": "Doencas",
+              "type": "string",
+              "sample": "Síndrome da Imune Deficiência Adquirida (AIDS) (Transtorno)",
+              "include": true
+            }
+          ]
+        },
+        "okCID - Relacionamento classe Doenca.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Classe",
+              "type": "string",
+              "sample": "Cólera",
+              "include": true
+            },
+            {
+              "name": "DESCRICAO",
+              "type": "string",
+              "sample": "Cólera devida a Vibrio cholerae 01, biótipo cholerae",
+              "include": true
+            }
+          ]
+        },
+        "okCID - Relacionamento SubCapitulo Clase.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "SubCapitulo",
+              "type": "string",
+              "sample": "Doenças infecciosas intestinais (A00-A09)",
+              "include": true
+            },
+            {
+              "name": "Classe",
+              "type": "string",
+              "sample": "Cólera",
+              "include": true
+            }
+          ]
+        },
+        "okCID - SubCapítulos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "titulo do sub capítulo",
+              "type": "string",
+              "sample": "Doenças infecciosas intestinais (A00-A09)",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacao1para1DoencaDoencaComCompartilhamentoSIntomasGenes_46 - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "ƒ-",
+              "type": "string",
+              "sample": "1 para 1",
+              "include": true
+            },
+            {
+              "name": "valor da correlacao",
+              "type": "string",
+              "sample": "0,1141443483683350",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Terms Concatanados",
+              "type": "string",
+              "sample": "Aberrações cromossômicas",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "sample": "Acanthose Nigricans",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacao1paranDoencaDoencaComCompartilhamentoSIntomasGenes_46 - Doenca (1) Origem para a relação Destino (n).csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "tipo relacao",
+              "type": "string",
+              "sample": "1 para n",
+              "include": true
+            },
+            {
+              "name": "valor da correlacao",
+              "type": "string",
+              "sample": "0,14744811071121300",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Terms isolados",
+              "type": "string",
+              "sample": "Aberrações cromossômicas",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "sample": "Albinismo; ocular",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacaonpara1DoencaDoencaComCompartilhamentoSIntomasGenes_46 - relacao Origem (n) para termo (1) Destino.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "tipo relacao",
+              "type": "string",
+              "sample": "n para 1",
+              "include": true
+            },
+            {
+              "name": "valor da correlacao",
+              "type": "string",
+              "sample": "0,17629070499744300",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Terms Concatanados",
+              "type": "string",
+              "sample": "Anemia; aplástica",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "sample": "Aberrações cromossômicas",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacaonpara1DoencaDoencaComCompartilhamentoSIntomasGenes_46 - termos (n) para relacao Origem (n).csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "MeSH Term (n) Origem para relação (n)",
+              "type": "string",
+              "sample": "Leucemia",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Terms Concatanados",
+              "type": "string",
+              "sample": "Leucemia; linfocítica; crônica; células B",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacaonparamDoencaDoencaComCompartilhamentoSIntomasGenes_46 - relacoes n para m.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "tipo relacao",
+              "type": "string",
+              "sample": "n para m",
+              "include": true
+            },
+            {
+              "name": "valor da correlacao",
+              "type": "string",
+              "sample": "0,17029049299123300",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Terms Concatanados",
+              "type": "string",
+              "sample": "Aborto; espontâneo",
+              "include": true
+            },
+            {
+              "name": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "sample": "Acidose; lática",
+              "include": true
+            }
+          ]
+        },
+        "okDoencas - Termos Capitulos Coluna.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Doenca",
+              "type": "string",
+              "sample": "Algumas",
+              "include": true
+            },
+            {
+              "name": "Capitulo",
+              "type": "string",
+              "sample": "Algumas doenças infecciosas e parasitárias (A00-B99)",
+              "include": true
+            }
+          ]
+        },
+        "okDoencas - Doencas Termos Unificados.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "disease_Dui",
+              "type": "integer",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "Doencas Termos Unificados",
+              "type": "string",
+              "sample": "Um",
+              "include": true
+            }
+          ]
+        },
+        "okDoencas - Termos Classes Coluna.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Doenca",
+              "type": "string",
+              "sample": "Aumento Glicemia",
+              "include": true
+            },
+            {
+              "name": "Classe",
+              "type": "string",
+              "sample": "Aumento da glicemia",
+              "include": true
+            }
+          ]
+        },
+        "okDoencas - Termos SubCapitulos Coluna.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Doenca",
+              "type": "string",
+              "sample": "10ª Revisão",
+              "include": true
+            },
+            {
+              "name": "SubCapitulo",
+              "type": "string",
+              "sample": "CID 10ª Revisão não disponível (U99-U99)",
+              "include": true
+            }
+          ]
+        },
+        "okPacientes - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "P0001175a (1/3)",
+              "include": true
+            }
+          ]
+        },
+        "okRelacionamentoPacientesDoencas - Página2.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "P1579022a (1/1)",
+              "include": true
+            },
+            {
+              "name": "Doenca",
+              "type": "string",
+              "sample": "(Ataque de gota) ou (isquemia cerebral transitória) ou (insuficiência vertebro-basilar)",
+              "include": true
+            }
+          ]
+        },
+        "okRelacionamentoPacientesSintomas - Pacientes.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente_id",
+              "type": "string",
+              "sample": "P0002418a (1/1)",
+              "include": true
+            },
+            {
+              "name": "Sintoma",
+              "type": "string",
+              "sample": "(Distúrbios visuais não observados) ou (ambliopia) ou (visão embaçada)",
+              "include": true
+            }
+          ]
+        },
+        "okSintomas - SIntomas consolidados.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Sintomas (termos)",
+              "type": "string",
+              "sample": "Abdômen agudo",
+              "include": true
+            }
+          ]
+        },
+        "okSintomas - Grupos Sintomas.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupo",
+              "type": "string",
+              "sample": "Abdômen e Digestivo",
+              "include": true
+            }
+          ]
+        },
+        "okSintomas origem par relação origem - relacao sintomas origens para doencas destino.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term",
+              "type": "string",
+              "sample": "Abdômen",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Abdômen; agudo",
+              "include": true
+            }
+          ]
+        },
+        "okSintomas - Relacionamento dos  Sintomas para os grupos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupo",
+              "type": "string",
+              "sample": "Abdômen e Digestivo",
+              "include": true
+            },
+            {
+              "name": "Sintomas (termos)",
+              "type": "string",
+              "sample": "Dificuldade em engolir",
+              "include": true
+            }
+          ]
+        },
+        "Relação origem 1 para n relação destino - 1 para 1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "TFIDF score",
+              "type": "string",
+              "sample": "0,22882302165425400",
+              "include": true
+            },
+            {
+              "name": "PubMed occurrence",
+              "type": "integer",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Distúrbios da Olfação",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Disease Term",
+              "type": "string",
+              "sample": "22q11 Síndrome da deleção",
+              "include": true
+            }
+          ]
+        },
+        "Relação origem 1 para n relação destino - 1 para n.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "TFIDF score",
+              "type": "string",
+              "sample": "0,10981383550099400",
+              "include": true
+            },
+            {
+              "name": "PubMed occurrence",
+              "type": "integer",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Cegueira",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Disease Term",
+              "type": "string",
+              "sample": "Anemia; disperterropoiética; congênita",
+              "include": true
+            }
+          ]
+        },
+        "okSintomas origem par relação origem - relacao sintomas origens para sintomas agrup dest.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term",
+              "type": "string",
+              "sample": "Abdômen",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Abdômen; agudo",
+              "include": true
+            }
+          ]
+        },
+        "Relação origem 1 para n relação destino - n para m.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "TFIDF score",
+              "type": "string",
+              "sample": "0,2649435403291060",
+              "include": true
+            },
+            {
+              "name": "PubMed occurrence",
+              "type": "integer",
+              "sample": "137",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Púrpura; trombocitopênico; idiopático",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Disease Term",
+              "type": "string",
+              "sample": "Anemia; hemolítica; autoimune",
+              "include": true
+            }
+          ]
+        },
+        "SaudeAlimentos - Alimentos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Alimentos",
+              "type": "string",
+              "sample": "Ovo Orgânico..",
+              "include": true
+            }
+          ]
+        },
+        "SaudeAlimentos - alimentosRelacionadosGrupos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "alimento",
+              "type": "string",
+              "sample": "Ovo Orgânico..",
+              "include": true
+            },
+            {
+              "name": "Grupo",
+              "type": "string",
+              "sample": "super Alimentos",
+              "include": true
+            }
+          ]
+        },
+        "Relação origem 1 para n relação destino - n para 1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "TFIDF score",
+              "type": "string",
+              "sample": "0,20782571284180700",
+              "include": true
+            },
+            {
+              "name": "PubMed occurrence",
+              "type": "integer",
+              "sample": "1",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Bexiga urinária; neurogênica",
+              "include": true
+            },
+            {
+              "name": "MeSH (Medical Subject Headings) Disease Term",
+              "type": "string",
+              "sample": "A síndrome de Guillain-Barré",
+              "include": true
+            }
+          ]
+        },
+        "SaudeBeneficios - okBeneficios Concatenados.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "beneficios concatenados",
+              "type": "string",
+              "sample": "Suporta; Sistema Imunológico",
+              "include": true
+            }
+          ]
+        },
+        "SaudeBeneficios - OkBeneficios Relacionados.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Termo Concatenado",
+              "type": "string",
+              "sample": "Suporta; Sistema Imunológico",
+              "include": true
+            },
+            {
+              "name": "Termo",
+              "type": "string",
+              "sample": "Suporta",
+              "include": true
+            }
+          ]
+        },
+        "SaudeBeneficios - okBeneficios Termos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Termo Benefícios",
+              "type": "string",
+              "sample": "a partir do",
+              "include": true
+            }
+          ]
+        },
+        "SaudeAlimentos - Grupos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupos",
+              "type": "string",
+              "sample": "Super Alimentos",
+              "include": true
+            }
+          ]
+        },
+        "SaudeAreas - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Areas",
+              "type": "string",
+              "sample": "beleza",
+              "include": true
+            }
+          ]
+        },
+        "SaudeExames - exames.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Exames",
+              "type": "string",
+              "sample": "COLESTEROL TOTAL",
+              "include": true
+            }
+          ]
+        },
+        "SaudeHabitos - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Hábitos",
+              "type": "string",
+              "sample": "Jejum intermitente",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - Paciente Y Ralacionamento Exames.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Exames",
+              "type": "string",
+              "sample": "COLESTEROL TOTAL",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - Paciente Y relacionamento Direto Benefícios dos Su.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Beneficios",
+              "type": "string",
+              "sample": "Suporta; Sistema Imunológico",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - PacienteY relacionamento Habitos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Hábitos",
+              "type": "string",
+              "sample": "Jejum intermitente",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - PacienteYRelacionamentoTerapias.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Terapias Complementares",
+              "type": "string",
+              "sample": "Ozônio",
+              "include": true
+            }
+          ]
+        },
+        "SaudePartesCorpo - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Partes do Corpo",
+              "type": "string",
+              "sample": "Rosto (Facial)",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - Pacientes X e Y trelacionados aos Alimentos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Alimentos",
+              "type": "string",
+              "sample": "Ovo Orgânico..",
+              "include": true
+            }
+          ]
+        },
+        "SaudeSituações - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Situação",
+              "type": "string",
+              "sample": "Parto",
+              "include": true
+            }
+          ]
+        },
+        "SaudeSuplementos - okGrupos Suplementos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Grupo Suplementos",
+              "type": "string",
+              "sample": "AAEs",
+              "include": true
+            }
+          ]
+        },
+        "SaudeSuplementos - okSuplementos 1 para n Benefinios.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Suplementos",
+              "type": "string",
+              "sample": "Vitamina B12 (metilcobalamina)",
+              "include": true
+            },
+            {
+              "name": "Beneficios COncatenados",
+              "type": "string",
+              "sample": "Contribui; Formação Sanguínea",
+              "include": true
+            }
+          ]
+        },
+        "SaudePacienteY - PacienteYRelacionamentoSuplementos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Paciente",
+              "type": "string",
+              "sample": "Paciente Y",
+              "include": true
+            },
+            {
+              "name": "Suplementos",
+              "type": "string",
+              "sample": "5 Htp (Grifonia Simplicifolia)",
+              "include": true
+            }
+          ]
+        },
+        "SaudeSuplementos - okSuplementos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "suplemento",
+              "type": "string",
+              "sample": "5 Htp (Grifonia Simplicifolia)",
+              "include": true
+            }
+          ]
+        },
+        "SaudeSuplementos - okSuplementosGrupos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Suplementos",
+              "type": "string",
+              "sample": "5 Htp (Grifonia Simplicifolia)",
+              "include": true
+            },
+            {
+              "name": "GruposSuplementos",
+              "type": "string",
+              "sample": "Essenciais",
+              "include": true
+            }
+          ]
+        },
+        "SaudeTerapias - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Terapias Complementares",
+              "type": "string",
+              "sample": "Ozônio",
+              "include": true
+            }
+          ]
+        },
+        "sintomas agrupados - Página1.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "sample": "Abdômen; agudo",
+              "include": true
+            }
+          ]
+        },
+        "okCID - Relacionamento Capítulos SubCapítulos.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "Capitulo",
+              "type": "string",
+              "sample": "Algumas doenças infecciosas e parasitárias (A00-B99)",
+              "include": true
+            },
+            {
+              "name": "SubCapitulo",
+              "type": "string",
+              "sample": "Doenças infecciosas intestinais (A00-A09)",
+              "include": true
+            }
+          ]
+        },
+        "okCoorelacao1paranDoencaDoencaComCompartilhamentoSIntomasGenes_46 - relacao Destino para suas doencas .csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "relacao destino",
+              "type": "string",
+              "sample": "Albinismo; ocular",
+              "include": true
+            },
+            {
+              "name": "termos relacionados",
+              "type": "string",
+              "sample": "Albinismo",
+              "include": true
+            }
+          ]
+        },
+        "okRelação destino para Doenca destino - relacao sintomas origens para doencas destino.csv": {
+          "expanded": true,
+          "fields": [
+            {
+              "name": "sintomas agrupados",
+              "type": "string",
+              "sample": "46; XX Distúrbios do Desenvolvimento Sexual",
+              "include": true
+            },
+            {
+              "name": "Doencao termo",
+              "type": "string",
+              "sample": "46",
+              "include": true
+            }
+          ]
+        }
+      }
+    },
+    "graphModel": {
+      "nodeSchemas": {
+        "n0": {
+          "label": "Sintomas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Sintomas (termos)",
+              "type": "string",
+              "identifier": "gbbHovZHCvPAoMI4zWEVY"
+            }
+          ],
+          "key": {
+            "properties": [
+              "gbbHovZHCvPAoMI4zWEVY"
+            ]
+          }
+        },
+        "n1": {
+          "label": "Grupos Sintomas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "GrupoSintoma",
+              "type": "string",
+              "identifier": "eSaOU1OInNYCCjjQil7I2"
+            },
+            {
+              "property": "Grupo",
+              "type": "string",
+              "identifier": "cAAWUQnwYNbFVvrlKnJpb"
+            }
+          ],
+          "key": {
+            "properties": [
+              "eSaOU1OInNYCCjjQil7I2"
+            ]
+          }
+        },
+        "n2": {
+          "label": "Doencas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Doencas Termos Unificados",
+              "type": "string",
+              "identifier": "49pzsfT0YfHU9DBRHMk8w"
+            }
+          ],
+          "key": {
+            "properties": [
+              "49pzsfT0YfHU9DBRHMk8w"
+            ]
+          }
+        },
+        "n3": {
+          "label": "Grupos Doencas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Descricao Capitulo",
+              "type": "string",
+              "identifier": "dhcfVnEk1kLr7nFPjjMUQ"
+            }
+          ],
+          "key": {
+            "properties": [
+              "dhcfVnEk1kLr7nFPjjMUQ"
+            ]
+          }
+        },
+        "n4": {
+          "label": "SubGrupos Doencas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "titulo do sub capítulo",
+              "type": "string",
+              "identifier": "AgIiI2FN6rCzwQTYiOUY4"
+            }
+          ],
+          "key": {
+            "properties": [
+              "AgIiI2FN6rCzwQTYiOUY4"
+            ]
+          }
+        },
+        "n5": {
+          "label": "Pacientes",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Paciente",
+              "type": "string",
+              "identifier": "PyTLbT09iyj0nfbOsrkIB"
+            }
+          ],
+          "key": {
+            "properties": [
+              "PyTLbT09iyj0nfbOsrkIB"
+            ]
+          }
+        },
+        "n7": {
+          "label": "Sintomas Agrupados",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "MeSH (Medical Subject Headings) Symptom Term Concatenado",
+              "type": "string",
+              "identifier": "ca2Hu-7m5UbapKGcOvgpe"
+            }
+          ],
+          "key": {
+            "properties": [
+              "ca2Hu-7m5UbapKGcOvgpe"
+            ]
+          }
+        },
+        "n8": {
+          "label": "Doencas Agrupadas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "MeSH Disease Term Concatenados",
+              "type": "string",
+              "identifier": "SKaqEk--cmLa2vQseFhVL"
+            }
+          ],
+          "key": {
+            "properties": [
+              "SKaqEk--cmLa2vQseFhVL"
+            ]
+          }
+        },
+        "n9": {
+          "label": "Terapias",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Terapias Complementares",
+              "type": "string",
+              "identifier": "psYgTGPRs0pCWhO5W-9dG"
+            }
+          ],
+          "key": {
+            "properties": [
+              "psYgTGPRs0pCWhO5W-9dG"
+            ]
+          }
+        },
+        "n10": {
+          "label": "Suplementos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "suplemento",
+              "type": "string",
+              "identifier": "G5hNDHBIRmHCNAhiTQ7vW"
+            }
+          ],
+          "key": {
+            "properties": [
+              "G5hNDHBIRmHCNAhiTQ7vW"
+            ]
+          }
+        },
+        "n11": {
+          "label": "Grupos Suplementos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Grupo Suplementos",
+              "type": "string",
+              "identifier": "Ml6PLp8lSdhbrNpHhax17"
+            }
+          ],
+          "key": {
+            "properties": [
+              "Ml6PLp8lSdhbrNpHhax17"
+            ]
+          }
+        },
+        "n12": {
+          "label": "Partes do Corpo",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Partes do Corpo",
+              "type": "string",
+              "identifier": "Zpt5fmrEsJS1UXxj8NZGg"
+            }
+          ],
+          "key": {
+            "properties": [
+              "Zpt5fmrEsJS1UXxj8NZGg"
+            ]
+          }
+        },
+        "n13": {
+          "label": "Habitos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Hábitos",
+              "type": "string",
+              "identifier": "q6P4GChboA9DOaCNNtSGS"
+            }
+          ],
+          "key": {
+            "properties": [
+              "q6P4GChboA9DOaCNNtSGS"
+            ]
+          }
+        },
+        "n14": {
+          "label": "Situacoes",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Situação",
+              "type": "string",
+              "identifier": "lktrLoIbNR5q1GMB-8PKA"
+            }
+          ],
+          "key": {
+            "properties": [
+              "lktrLoIbNR5q1GMB-8PKA"
+            ]
+          }
+        },
+        "n15": {
+          "label": "Beneficios",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Termo Benefícios",
+              "type": "string",
+              "identifier": "P_oCYFZyahjBLod-mjJmJ"
+            }
+          ],
+          "key": {
+            "properties": [
+              "P_oCYFZyahjBLod-mjJmJ"
+            ]
+          }
+        },
+        "n16": {
+          "label": "Beneficios Concatenados",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "beneficios concatenados",
+              "type": "string",
+              "identifier": "sZcq4qTlrUQmB6hJrK2yS"
+            }
+          ],
+          "key": {
+            "properties": [
+              "sZcq4qTlrUQmB6hJrK2yS"
+            ]
+          }
+        },
+        "n18": {
+          "label": "Alimentos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Alimentos",
+              "type": "string",
+              "identifier": "pN4oBvSnXtdHbx2ZK4gKh"
+            }
+          ],
+          "key": {
+            "properties": [
+              "pN4oBvSnXtdHbx2ZK4gKh"
+            ]
+          }
+        },
+        "n19": {
+          "label": "Exames",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Exames",
+              "type": "string",
+              "identifier": "vqrhsTe16RCnCPwlTsuJZ"
+            }
+          ],
+          "key": {
+            "properties": [
+              "vqrhsTe16RCnCPwlTsuJZ"
+            ]
+          }
+        },
+        "n20": {
+          "label": "Areas",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Areas",
+              "type": "string",
+              "identifier": "Oup7d5kMlUFbvL0wPu8e0"
+            }
+          ],
+          "key": {
+            "properties": [
+              "Oup7d5kMlUFbvL0wPu8e0"
+            ]
+          }
+        },
+        "n21": {
+          "label": "Grupos Alimentos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Grupos",
+              "type": "string",
+              "identifier": "ya8C-QgdwcO43bESUHv74"
+            }
+          ],
+          "key": {
+            "properties": [
+              "ya8C-QgdwcO43bESUHv74"
+            ]
+          }
+        },
+        "n22": {
+          "label": "Eventos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Eventos",
+              "type": "string",
+              "identifier": "f9sAxDkc8n1FZ5CfpvGQe"
+            }
+          ],
+          "key": {
+            "properties": [
+              "f9sAxDkc8n1FZ5CfpvGQe"
+            ]
+          }
+        },
+        "n23": {
+          "label": "Grupos Eventos",
+          "additionLabels": [],
+          "labelProperties": [],
+          "properties": [
+            {
+              "property": "Ano",
+              "type": "integer",
+              "identifier": "gsKryDyCuBWDIZn47kqX-"
+            }
+          ],
+          "key": {
+            "properties": [
+              "gsKryDyCuBWDIZn47kqX-"
+            ]
+          }
+        }
+      },
+      "relationshipSchemas": {
+        "n0": {
+          "type": "TEM",
+          "sourceNodeSchema": "n1",
+          "targetNodeSchema": "n0",
+          "properties": []
+        },
+        "n1": {
+          "type": "CONTEM",
+          "sourceNodeSchema": "n3",
+          "targetNodeSchema": "n4",
+          "properties": []
+        },
+        "n2": {
+          "type": "TEM",
+          "sourceNodeSchema": "n4",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n3": {
+          "type": "CONTEM",
+          "sourceNodeSchema": "n3",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n5": {
+          "type": "DOENCA_CLASSE",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n8": {
+          "type": "DIAGNOSTICO",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n9": {
+          "type": "TEM",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n0",
+          "properties": []
+        },
+        "n14": {
+          "type": "RELACAO SINTOMAS PARA RELACAO DOENCAS",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n2",
+          "properties": [
+            {
+              "property": "TFIDF score",
+              "type": "string",
+              "identifier": "0iQTEVBuIRaXPspA2BEVp"
+            },
+            {
+              "property": "PubMed occurrence",
+              "type": "integer",
+              "identifier": "04pm5kwwxnsSEMBz_rdgo"
+            }
+          ]
+        },
+        "n16": {
+          "type": "SINTOMAS ORIGEM PARA RELACAO SINTOMAS AGRUPADOS DESTINO",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n7",
+          "properties": []
+        },
+        "n17": {
+          "type": "RELACAO DOENCAS AGRUPADAS RELACAO DOENCAS",
+          "sourceNodeSchema": "n8",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n18": {
+          "type": "DOENCAS QUE COMPOEM A RELACAO",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n8",
+          "properties": []
+        },
+        "n19": {
+          "type": "RELACAO DOENCAS AGRUPADAS PARA DOENCAS AGRUPADAS",
+          "sourceNodeSchema": "n8",
+          "targetNodeSchema": "n8",
+          "properties": [
+            {
+              "property": "tipo relacao",
+              "type": "string",
+              "identifier": "wQ2X5n8LB-WjseWaOih94"
+            },
+            {
+              "property": "valor da correlacao",
+              "type": "string",
+              "identifier": "pgZx8EQaifBtjh5aszh1E"
+            }
+          ]
+        },
+        "n20": {
+          "type": "RELACAO DOENCAS PARA DOENCAS AGRUPADAS",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n8",
+          "properties": [
+            {
+              "property": "tipo relacao",
+              "type": "string",
+              "identifier": "ykx4tqdrBvIqkOmqHzuxP"
+            },
+            {
+              "property": "valor da correlacao",
+              "type": "string",
+              "identifier": "lDefxuD1bTMTMGiWEwhmU"
+            }
+          ]
+        },
+        "n21": {
+          "type": "RELACAO DOENCAS PARA RELACAO DOENCA",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n2",
+          "properties": [
+            {
+              "property": "valor da correlacao",
+              "type": "string",
+              "identifier": "rYoK4ioRlNUY0ao9BRo56"
+            }
+          ]
+        },
+        "n22": {
+          "type": "RELACAO SINTOMAS PARA RELACAO DOENCAS AGRUPADAS",
+          "sourceNodeSchema": "n0",
+          "targetNodeSchema": "n8",
+          "properties": [
+            {
+              "property": "TFIDF score",
+              "type": "string",
+              "identifier": "MpJTnfXBA8tbQHfkiPdCI"
+            },
+            {
+              "property": "PubMed occurrence",
+              "type": "integer",
+              "identifier": "5h_38lqkXRAlUv6RroTdO"
+            }
+          ]
+        },
+        "n23": {
+          "type": "RELACAO SINTOMAS AGRUPADOS PARA RELACAO DOENCA",
+          "sourceNodeSchema": "n7",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n24": {
+          "type": "RELACAO SINTOMAS AGRUPADOS PARA RELACAO DOENCAS AGRUPADAS",
+          "sourceNodeSchema": "n7",
+          "targetNodeSchema": "n8",
+          "properties": [
+            {
+              "property": "TFIDF score",
+              "type": "string",
+              "identifier": "fXXAMBgC695a8mC5LxJgN"
+            },
+            {
+              "property": "PubMed occurrence",
+              "type": "integer",
+              "identifier": "qU65qPGzUAne_C5YU3M9k"
+            }
+          ]
+        },
+        "n25": {
+          "type": "TEM",
+          "sourceNodeSchema": "n11",
+          "targetNodeSchema": "n10",
+          "properties": []
+        },
+        "n26": {
+          "type": "FAZ",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n9",
+          "properties": []
+        },
+        "n27": {
+          "type": "INGERE",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n10",
+          "properties": []
+        },
+        "n28": {
+          "type": "TEM",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n13",
+          "properties": []
+        },
+        "n29": {
+          "type": "FAZ_PARTE",
+          "sourceNodeSchema": "n15",
+          "targetNodeSchema": "n16",
+          "properties": []
+        },
+        "n30": {
+          "type": "TEM",
+          "sourceNodeSchema": "n10",
+          "targetNodeSchema": "n16",
+          "properties": []
+        },
+        "n31": {
+          "type": "INGERE",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n18",
+          "properties": []
+        },
+        "n32": {
+          "type": "TEM",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n16",
+          "properties": []
+        },
+        "n33": {
+          "type": "FAZ",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n19",
+          "properties": []
+        },
+        "n34": {
+          "type": "CONTEM",
+          "sourceNodeSchema": "n21",
+          "targetNodeSchema": "n18",
+          "properties": []
+        },
+        "n35": {
+          "type": "TEM",
+          "sourceNodeSchema": "n23",
+          "targetNodeSchema": "n22",
+          "properties": []
+        },
+        "n36": {
+          "type": "ESTA_RELACIONADO",
+          "sourceNodeSchema": "n23",
+          "targetNodeSchema": "n23",
+          "properties": []
+        },
+        "n37": {
+          "type": "ESTA_RELACIONADO",
+          "sourceNodeSchema": "n22",
+          "targetNodeSchema": "n22",
+          "properties": []
+        },
+        "n38": {
+          "type": "TEM",
+          "sourceNodeSchema": "n22",
+          "targetNodeSchema": "n0",
+          "properties": []
+        },
+        "n39": {
+          "type": "TEM",
+          "sourceNodeSchema": "n22",
+          "targetNodeSchema": "n2",
+          "properties": []
+        },
+        "n40": {
+          "type": "GERA",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n22",
+          "properties": []
+        },
+        "n41": {
+          "type": "TEM",
+          "sourceNodeSchema": "n5",
+          "targetNodeSchema": "n23",
+          "properties": []
+        },
+        "n42": {
+          "type": "TERMOS DOENCAS SUBGRUPOS CID",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n4",
+          "properties": []
+        },
+        "n43": {
+          "type": "TERMOS DOENCA NO CAPITULO",
+          "sourceNodeSchema": "n2",
+          "targetNodeSchema": "n3",
+          "properties": []
+        }
+      }
+    },
+    "mappingModel": {
+      "nodeMappings": {
+        "n0": {
+          "nodeSchema": "n0",
+          "mappings": [
+            {
+              "field": "Sintomas (termos)"
+            }
+          ],
+          "fileSchema": "okSintomas - SIntomas consolidados.csv"
+        },
+        "n1": {
+          "nodeSchema": "n1",
+          "mappings": [
+            {
+              "field": "Grupo"
+            },
+            {
+              "field": "Grupo"
+            }
+          ],
+          "fileSchema": "okSintomas - Grupos Sintomas.csv"
+        },
+        "n2": {
+          "nodeSchema": "n2",
+          "mappings": [
+            {
+              "field": "Doencas Termos Unificados"
+            }
+          ],
+          "fileSchema": "okDoencas - Doencas Termos Unificados.csv"
+        },
+        "n3": {
+          "nodeSchema": "n3",
+          "mappings": [
+            {
+              "field": "Descricao Capitulo"
+            }
+          ],
+          "fileSchema": "okCID - Capítulos.csv"
+        },
+        "n4": {
+          "nodeSchema": "n4",
+          "mappings": [
+            {
+              "field": "titulo do sub capítulo"
+            }
+          ],
+          "fileSchema": "okCID - SubCapítulos.csv"
+        },
+        "n5": {
+          "nodeSchema": "n5",
+          "mappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "fileSchema": "okPacientes - Página1.csv"
+        },
+        "n7": {
+          "nodeSchema": "n7",
+          "mappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term Concatenado"
+            }
+          ],
+          "fileSchema": "sintomas agrupados - Página1.csv"
+        },
+        "n8": {
+          "nodeSchema": "n8",
+          "mappings": [
+            {
+              "field": "MeSH Disease Term Concatenados"
+            }
+          ],
+          "fileSchema": "Doencas Agrupadas - Página1.csv"
+        },
+        "n9": {
+          "nodeSchema": "n9",
+          "mappings": [
+            {
+              "field": "Terapias Complementares"
+            }
+          ],
+          "fileSchema": "SaudeTerapias - Página1.csv"
+        },
+        "n10": {
+          "nodeSchema": "n10",
+          "mappings": [
+            {
+              "field": "suplemento"
+            }
+          ],
+          "fileSchema": "SaudeSuplementos - okSuplementos.csv"
+        },
+        "n11": {
+          "nodeSchema": "n11",
+          "mappings": [
+            {
+              "field": "Grupo Suplementos"
+            }
+          ],
+          "fileSchema": "SaudeSuplementos - okGrupos Suplementos.csv"
+        },
+        "n12": {
+          "nodeSchema": "n12",
+          "mappings": [
+            {
+              "field": "Partes do Corpo"
+            }
+          ],
+          "fileSchema": "SaudePartesCorpo - Página1.csv"
+        },
+        "n13": {
+          "nodeSchema": "n13",
+          "mappings": [
+            {
+              "field": "Hábitos"
+            }
+          ],
+          "fileSchema": "SaudeHabitos - Página1.csv"
+        },
+        "n14": {
+          "nodeSchema": "n14",
+          "mappings": [
+            {
+              "field": "Situação"
+            }
+          ],
+          "fileSchema": "SaudeSituações - Página1.csv"
+        },
+        "n15": {
+          "nodeSchema": "n15",
+          "mappings": [
+            {
+              "field": "Termo Benefícios"
+            }
+          ],
+          "fileSchema": "SaudeBeneficios - okBeneficios Termos.csv"
+        },
+        "n16": {
+          "nodeSchema": "n16",
+          "mappings": [
+            {
+              "field": "beneficios concatenados"
+            }
+          ],
+          "fileSchema": "SaudeBeneficios - okBeneficios Concatenados.csv"
+        },
+        "n18": {
+          "nodeSchema": "n18",
+          "mappings": [
+            {
+              "field": "Alimentos"
+            }
+          ],
+          "fileSchema": "SaudeAlimentos - Alimentos.csv"
+        },
+        "n19": {
+          "nodeSchema": "n19",
+          "mappings": [
+            {
+              "field": "Exames"
+            }
+          ],
+          "fileSchema": "SaudeExames - exames.csv"
+        },
+        "n20": {
+          "nodeSchema": "n20",
+          "mappings": [
+            {
+              "field": "Areas"
+            }
+          ],
+          "fileSchema": "SaudeAreas - Página1.csv"
+        },
+        "n21": {
+          "nodeSchema": "n21",
+          "mappings": [
+            {
+              "field": "Grupos"
+            }
+          ],
+          "fileSchema": "SaudeAlimentos - Grupos.csv"
+        },
+        "n22": {
+          "nodeSchema": "n22",
+          "mappings": [
+            {
+              "field": "Eventos"
+            }
+          ],
+          "fileSchema": "Eventos - Eventos.csv"
+        },
+        "n23": {
+          "nodeSchema": "n23",
+          "mappings": [
+            {
+              "field": "Ano"
+            }
+          ],
+          "fileSchema": "Eventos - Grupos de Eventos.csv"
+        }
+      },
+      "relationshipMappings": {
+        "n0": {
+          "relationshipSchema": "n0",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Grupo"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Sintomas (termos)"
+            }
+          ],
+          "fileSchema": "okSintomas - Relacionamento dos  Sintomas para os grupos.csv"
+        },
+        "n1": {
+          "relationshipSchema": "n1",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Capitulo"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "SubCapitulo"
+            }
+          ],
+          "fileSchema": "okCID - Relacionamento Capítulos SubCapítulos.csv"
+        },
+        "n2": {
+          "relationshipSchema": "n2",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "SubCapitulo"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Classe"
+            }
+          ],
+          "fileSchema": "okCID - Relacionamento SubCapitulo Clase.csv"
+        },
+        "n3": {
+          "relationshipSchema": "n3",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Grupos Doencas"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Doencas"
+            }
+          ],
+          "fileSchema": "okCID - PubMed e MeSH.csv"
+        },
+        "n5": {
+          "relationshipSchema": "n5",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Doenca"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Classe"
+            }
+          ],
+          "fileSchema": "okDoencas - Termos Classes Coluna.csv"
+        },
+        "n8": {
+          "relationshipSchema": "n8",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Doenca"
+            }
+          ],
+          "fileSchema": "okRelacionamentoPacientesDoencas - Página2.csv"
+        },
+        "n9": {
+          "relationshipSchema": "n9",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente_id"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Sintoma"
+            }
+          ],
+          "fileSchema": "okRelacionamentoPacientesSintomas - Pacientes.csv"
+        },
+        "n14": {
+          "relationshipSchema": "n14",
+          "mappings": [
+            {
+              "field": "TFIDF score"
+            },
+            {
+              "field": "PubMed occurrence"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term Concatenado"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Disease Term"
+            }
+          ],
+          "fileSchema": "Relação origem 1 para n relação destino - 1 para 1.csv"
+        },
+        "n16": {
+          "relationshipSchema": "n16",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term Concatenado"
+            }
+          ],
+          "fileSchema": "okSintomas origem par relação origem - relacao sintomas origens para doencas destino.csv"
+        },
+        "n17": {
+          "relationshipSchema": "n17",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "termos relacionados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "relacao destino"
+            }
+          ],
+          "fileSchema": "okCoorelacao1paranDoencaDoencaComCompartilhamentoSIntomasGenes_46 - relacao Destino para suas doencas .csv"
+        },
+        "n18": {
+          "relationshipSchema": "n18",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "MeSH Disease Terms isolados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH Disease Term Concatenados"
+            }
+          ],
+          "fileSchema": "okCoorelacao1paranDoencaDoencaComCompartilhamentoSIntomasGenes_46 - Doenca (1) Origem para a relação Destino (n).csv"
+        },
+        "n19": {
+          "relationshipSchema": "n19",
+          "mappings": [
+            {
+              "field": "tipo relacao"
+            },
+            {
+              "field": "valor da correlacao"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH Disease Terms Concatanados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH Disease Term Concatenados"
+            }
+          ],
+          "fileSchema": "okCoorelacaonparamDoencaDoencaComCompartilhamentoSIntomasGenes_46 - relacoes n para m.csv"
+        },
+        "n20": {
+          "relationshipSchema": "n20",
+          "mappings": [
+            {
+              "field": "tipo relacao"
+            },
+            {
+              "field": "valor da correlacao"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH Disease Terms isolados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH Disease Term Concatenados"
+            }
+          ],
+          "fileSchema": "okCoorelacao1paranDoencaDoencaComCompartilhamentoSIntomasGenes_46 - Doenca (1) Origem para a relação Destino (n).csv"
+        },
+        "n21": {
+          "relationshipSchema": "n21",
+          "mappings": [
+            {
+              "field": "valor da correlacao"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH Disease Terms Concatanados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH Disease Term Concatenados"
+            }
+          ],
+          "fileSchema": "okCoorelacao1para1DoencaDoencaComCompartilhamentoSIntomasGenes_46 - Página1.csv"
+        },
+        "n22": {
+          "relationshipSchema": "n22",
+          "mappings": [
+            {
+              "field": "TFIDF score"
+            },
+            {
+              "field": "PubMed occurrence"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term Concatenado"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Disease Term"
+            }
+          ],
+          "fileSchema": "Relação origem 1 para n relação destino - 1 para n.csv"
+        },
+        "n23": {
+          "relationshipSchema": "n23",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "sintomas agrupados"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Doencao termo"
+            }
+          ],
+          "fileSchema": "okRelação destino para Doenca destino - relacao sintomas origens para doencas destino.csv"
+        },
+        "n24": {
+          "relationshipSchema": "n24",
+          "mappings": [
+            {
+              "field": "TFIDF score"
+            },
+            {
+              "field": "PubMed occurrence"
+            }
+          ],
+          "sourceMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Symptom Term Concatenado"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "MeSH (Medical Subject Headings) Disease Term"
+            }
+          ],
+          "fileSchema": "Relação origem 1 para n relação destino - n para m.csv"
+        },
+        "n25": {
+          "relationshipSchema": "n25",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "GruposSuplementos"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Suplementos"
+            }
+          ],
+          "fileSchema": "SaudeSuplementos - okSuplementosGrupos.csv"
+        },
+        "n26": {
+          "relationshipSchema": "n26",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Terapias Complementares"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - PacienteYRelacionamentoTerapias.csv"
+        },
+        "n27": {
+          "relationshipSchema": "n27",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Suplementos"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - PacienteYRelacionamentoSuplementos.csv"
+        },
+        "n28": {
+          "relationshipSchema": "n28",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Hábitos"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - PacienteY relacionamento Habitos.csv"
+        },
+        "n29": {
+          "relationshipSchema": "n29",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Termo"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Termo Concatenado"
+            }
+          ],
+          "fileSchema": "SaudeBeneficios - OkBeneficios Relacionados.csv"
+        },
+        "n30": {
+          "relationshipSchema": "n30",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Suplementos"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Beneficios COncatenados"
+            }
+          ],
+          "fileSchema": "SaudeSuplementos - okSuplementos 1 para n Benefinios.csv"
+        },
+        "n31": {
+          "relationshipSchema": "n31",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Alimentos"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - Pacientes X e Y trelacionados aos Alimentos.csv"
+        },
+        "n32": {
+          "relationshipSchema": "n32",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Beneficios"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - Paciente Y relacionamento Direto Benefícios dos Su.csv"
+        },
+        "n33": {
+          "relationshipSchema": "n33",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Exames"
+            }
+          ],
+          "fileSchema": "SaudePacienteY - Paciente Y Ralacionamento Exames.csv"
+        },
+        "n34": {
+          "relationshipSchema": "n34",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Grupo"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "alimento"
+            }
+          ],
+          "fileSchema": "SaudeAlimentos - alimentosRelacionadosGrupos.csv"
+        },
+        "n35": {
+          "relationshipSchema": "n35",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Grupo Evento"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Evento"
+            }
+          ],
+          "fileSchema": "Eventos - Grupo Evento relacionado a Evento.csv"
+        },
+        "n36": {
+          "relationshipSchema": "n36",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Ano"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Ano Semestre"
+            }
+          ],
+          "fileSchema": "Eventos - Relacionamento Grupo Eventos com Grupo Eventos.csv"
+        },
+        "n37": {
+          "relationshipSchema": "n37",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Macro evento"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Micro Evento"
+            }
+          ],
+          "fileSchema": "EventosMacroRelacionamentoMicroEventosSintomas - MacroEventosRelacionamentoMicroEventos.csv"
+        },
+        "n38": {
+          "relationshipSchema": "n38",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Micro Evento"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Sintoma"
+            }
+          ],
+          "fileSchema": "EventosMacroRelacionamentoMicroEventosSintomas - RelacionamentoEventosSintomas.csv"
+        },
+        "n39": {
+          "relationshipSchema": "n39",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Macro Evento"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Doenca"
+            }
+          ],
+          "fileSchema": "EventosDoencas - Página2.csv"
+        },
+        "n40": {
+          "relationshipSchema": "n40",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Eventos"
+            }
+          ],
+          "fileSchema": "Eventos - Paciente X Relacionado aos Eventos.csv"
+        },
+        "n41": {
+          "relationshipSchema": "n41",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Paciente"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Ano"
+            }
+          ],
+          "fileSchema": "Eventos - Paciente relacionado aos Grupos de Eventos.csv"
+        },
+        "n42": {
+          "relationshipSchema": "n42",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Doenca"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "SubCapitulo"
+            }
+          ],
+          "fileSchema": "okDoencas - Termos SubCapitulos Coluna.csv"
+        },
+        "n43": {
+          "relationshipSchema": "n43",
+          "mappings": [],
+          "sourceMappings": [
+            {
+              "field": "Doenca"
+            }
+          ],
+          "targetMappings": [
+            {
+              "field": "Capitulo"
+            }
+          ],
+          "fileSchema": "okDoencas - Termos Capitulos Coluna.csv"
+        }
+      }
+    }
+  }
+}
